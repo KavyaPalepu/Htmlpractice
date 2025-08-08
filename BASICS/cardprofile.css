@@ -1,0 +1,26 @@
+.parent{ 
+    height: 100%;
+    width: 70%;
+    border:2px solid;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+
+}
+.profile1{
+    width:35%;
+    height: 380px;
+    border: 2px solid;
+}
+.profile2{
+    width:35%;
+    height: 380px;
+    border: 2px solid;
+}
+.profile3{
+    width:35%;
+    height: 380px;
+    border: 2px solid;
+}

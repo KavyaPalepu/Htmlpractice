@@ -1,0 +1,50 @@
+body{
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   .demo{
+     
+    height: 35px;
+    width: 150px;
+    position:relative;
+    border: 2px solid black;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    transition: transform 1s linear;
+    z-index: 1;
+    overflow: hidden;
+
+   }
+   .demo::before{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    transform:translateX(0px);
+    background-color: rebeccapurple;
+    height: 100%;
+    width: 100%;
+
+   }
+     .demo::after{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    transform:translateX(0px);
+    background-color: rebeccapurple;
+    height: 100%;
+    width: 100%;
+
+   }
+   
+   .demo:hover::before{
+    transform: translateX(100px);
+    
+   }
+   .demo:hover::after{
+    transform: translateX(100px);
+    
+   }

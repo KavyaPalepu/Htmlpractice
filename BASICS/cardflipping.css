@@ -1,0 +1,46 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100svh;
+}
+.grandparent{
+perspective: 1000px;
+ display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 100px;
+    position:relative
+}
+.parent:hover{
+     transform:rotateY(180deg);
+     transform-style: preserve-3d;
+     transition: transform 2s linear;
+}
+.front{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    position: absolute;
+     transform:rotateY(180deg);
+}
+.back{
+    width: 200px;
+    height: 200px;
+    background-color:pink;
+      display: flex;
+    justify-content: center;
+    align-items: center;
+     backface-visibility: hidden;
+     position: absolute;
+
+}

@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+.sky {
+  background: linear-gradient(to bottom, #87ceeb, #fdd835);
+  height: 70vh;
+  position: relative;
+}
+
+.sun {
+  position: absolute;
+  top: 40px;
+  right: 100px;
+  width: 100px;
+  height: 100px;
+  background: yellow;
+  border-radius: 50%;
+  box-shadow: 0 0 50px yellow;
+}
+
+.cloud {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+
+.cloud1 {
+  top: 40px;
+  left: 120px;
+}
+
+.cloud2 {
+  top: 150px;
+  left:40px
+  right: 140px;
+}
+
+.bird {
+  position: absolute;
+  top: 80px;
+  left: 160px;
+  width: 50px;
+  height: 40px;
+  background: url('https://upload.wikimedia.org/wikipedia/commons/1/19/Cartoon_bird.png') no-repeat center;
+  background-size: contain;
+}
+
+.ground {
+  background: #111;
+  height: 30vh;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 30px;
+}
+
+.mountains {
+  display: flex;
+  gap: 10px;
+}
+
+.mountain {
+  width: 100px;
+  height: 200px;
+  background: #654321;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.trees {
+  display: flex;
+  gap: 20px;
+  margin-left: 50px;
+}
+
+.tree {
+  width: 50px;
+  height: 150px;
+  background: #6b8e23;
+  border-radius: 50% 50% 0 0;
+  position: relative;
+}
+
+.tree::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  width: 10px;
+  height: 40px;
+  background: brown;
+}
+
+.tree.small {
+  height: 100px;
+  width: 40px;
+}
+
+.car {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  width: 80px;
+  height: 40px;
+  background: url('https://upload.wikimedia.org/wikipedia/commons/8/88/Cartoon_red_car.png') no-repeat center;
+  background-size: contain;
+}
+
+.snowflakes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.snowflake {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  animation: fall 10s infinite linear;
+  opacity: 0.7;
+}
+
+.snowflake:nth-child(1) {
+  left: 20%;
+  animation-delay: 0s;
+}
+
+.snowflake:nth-child(2) {
+  left: 40%;
+  animation-delay: 2s;
+}
+
+.snowflake:nth-child(3) {
+  left: 60%;
+  animation-delay: 4s;
+}
+
+.snowflake:nth-child(4) {
+  left: 80%;
+  animation-delay: 6s;
+}
+
+@keyframes fall {
+  0% {
+    top: -10px;
+  }
+  100% {
+    top: 100vh;
+  }
+}

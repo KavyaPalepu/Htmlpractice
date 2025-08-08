@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  background: black;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.room {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  border: 2px solid black;
+}
+
+.wall {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom right, #ffffff, #e0e0e0);
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.1);
+}
+
+.back {
+  transform: translateZ(-1350px);
+  box-shadow: inset 0 0 25px black;
+}
+
+.left {
+  width: 1350px;
+  height: 300px;
+  transform: rotateY(90deg) translateZ(-150px);
+  transform-origin: left;
+  right:-1000px;
+  box-shadow: inset 0 0 25px black;
+  background: red;
+  display: flex;
+  color: #e0e0e0;
+}
+
+.right {
+  width: 1350px;
+  height: 300px;
+  transform: rotateY(-90deg) translateZ(250px);
+  transform-origin: right;
+   left: -600px;
+box-shadow: inset 0 0 25px black;
+ background: red;
+  display: flex;
+  color: #e0e0e0;
+}
+
+.top {
+  height: 572px;
+  width:216px;
+  transform: rotateX(90deg) translateZ(200px);
+  transform-origin: top;
+  top:286px ;
+  right: 142px;
+   background: red;
+  box-shadow: inset 0 0 25px black;
+   display: flex;
+  color: #e0e0e0;
+}
+
+.bottom {
+  height: 572px;
+  width: 216px;
+  transform: rotateX(-90deg) translateZ(200px);
+  transform-origin: bottom;
+  bottom: 286px;
+  left:142px;
+   background: red;
+  box-shadow: inset 0 0 25px black;
+   display: flex;
+  color: #e0e0e0;
+}

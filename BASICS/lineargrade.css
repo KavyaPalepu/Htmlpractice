@@ -1,0 +1,59 @@
+.grade{
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(to right,red,rgb(32, 29, 206),rgb(17, 220, 108));
+}
+.grade1{
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(red,rgb(32, 29, 206),rgb(17, 220, 108));
+    
+}
+.grade2{
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(to top,red,rgb(32, 29, 206),rgb(17, 220, 108));
+}
+.grade3{
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(to bottom left,red,rgb(32, 29, 206),rgb(17, 220, 108));
+}
+.grade4{
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(to top left,red,rgb(32, 29, 206),rgb(17, 220, 108));
+}
+.grade5{
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(to bottom right,red,rgb(32, 29, 206),rgb(17, 220, 108));
+}
+.grade6{
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(to left,red,rgb(32, 29, 206),rgb(17, 220, 108));
+}
+.grade7{
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(to top right,red,rgb(32, 29, 206),rgb(17, 220, 108));
+}
+.grade8{
+    width: 200px;
+    height: 200px;
+    background-image:radial-gradient(red 30%,orange 20%,white 50% );
+    
+}
+.grade9{
+    width: 200px;
+    height: 200px;
+    background-image:repeating-radial-gradient(red 5%,black 10%,yellow 15%);
+   
+}
+.grade10{
+    width: 200px;
+    height: 200px;
+    background-image:conic-gradient(at 50% 40%,red,green,black,yellow);
+    border-radius: 50%;
+}

@@ -1,0 +1,36 @@
+.para{
+    text-shadow: 1px 2px red;
+}
+.para2{
+    text-transform: capitalize;
+    color: blueviolet;
+    text-decoration-line: underline;
+    text-decoration-color: green;
+}
+.para3{
+    color: orange;
+}
+.para4{
+    text-transform: uppercase;
+    color: green;
+    text-decoration-line:line-through;
+    text-decoration-color:black;
+    word-spacing: 2px;
+}
+.para5{
+    text-transform: lowercase;
+    color: darkblue;
+    text-decoration-line: overline;
+    text-decoration-color: skyblue;
+}
+.para6{
+    color: brown;
+}
+.para7{
+    color: skyblue;
+}
+.para8{
+     color: orangered;
+    text-align: right;
+    line-height: 3cap;
+}

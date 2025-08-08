@@ -1,0 +1,54 @@
+.parent{
+    width: 100;
+   
+    border:5px solid black;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.child1,.child2,.child3,.child4,.child5,.child6,.child7,.child8,.child9{
+width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 40px;
+}
+.child1{
+    
+    background-color: red;
+}
+.child2{
+    
+    background-color: rgb(68, 0, 255);
+}
+.child3{
+   
+    background-color: rgb(255, 0, 200);
+}
+.child4{
+   
+    background-color: red;
+}
+.child5{
+ 
+    background-color: rgb(68, 0, 255);
+}
+.child6{
+   
+    background-color: rgb(255, 0, 200);
+}
+.child7{
+   
+    background-color: rgb(235, 96, 10);
+}
+.child8{
+    background-color: rgb(95, 18, 78);
+}
+
+.child9{
+  
+    background-color: rgb(43, 203, 231);
+}

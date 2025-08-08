@@ -1,0 +1,21 @@
+.demo{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    animation: myanimi 2s 3;
+}
+@keyframes myanimi{
+    0%{background-color: red;
+
+    transform: rotateX(50deg);}
+    50%{
+        background-color: blue;
+        transform: rotateX(90deg);
+        content: "sri";
+    }
+    100%{
+        background-color: green;
+        transform: rotateX(180deg);
+          content: "sri";
+    }
+}

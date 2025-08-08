@@ -1,0 +1,102 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100svh;
+}
+
+.cube{width: 200px;
+     height: 200px;
+    position: relative;
+transform-style: preserve-3d;
+transition: transform 1s linear;
+perspective: 10000px;
+animation: myanime 7s infinite ;
+ display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+@keyframes myanime{
+    100%{
+        transform: rotatez(360deg) rotateX(360deg) rotateY(180deg);
+    }
+}
+.left{
+    width: 200px;
+    height: 200px;
+    transform: rotateY(90deg) translateZ(100px);
+    background-color: wheat;
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+
+    
+}
+.cell{
+   
+
+    
+    border: 1px solid black;
+
+   
+}
+.right{
+    width: 200px;
+    height: 200px;
+    transform: rotateY(90deg) translateZ(-100px);
+    background-color: red;
+    position: absolute;
+     display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    
+   
+}
+.front{
+    width: 200px;
+    height: 200px;
+    transform:  translatez(100px);
+    background-color: green;
+    position: absolute;
+     display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    
+ 
+}
+.back{
+    width: 200px;
+    height: 200px;
+    transform:  translatez(-100px);
+    background-color: blue;
+    position: absolute;
+     display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    
+}
+.top{
+    width: 200px;
+    height: 200px;
+    transform:rotateX(90deg) translateZ(100px);
+    background-color: orange;
+    position: absolute;
+     display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    
+}
+.bottom{
+     width: 200px;
+    height: 200px;
+    transform: rotateX(90deg) translateZ(-100px);
+    background-color: gold;
+    position: absolute;
+     display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    
+}
+

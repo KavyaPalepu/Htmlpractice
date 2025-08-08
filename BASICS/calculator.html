@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pink Calculator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Varela+Round&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #f7f7f7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: 'Varela Round', sans-serif;
+      
+    }
+
+    .calculator {
+      background: #f9b6d2;
+      padding: 20px;
+      border-radius: 25px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      width: 320px;
+      border: 2px solid rgb(247, 89, 115);
+    }
+
+    .display {
+      background: #fff;
+      font-family: 'Orbitron', monospace;
+      font-size: 28px;
+      text-align: right;
+      padding: 10px 15px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      color: #222;
+      letter-spacing: 2px;
+      border: 2px solid rgb(247, 89, 115);
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      gap: 5px;
+      border: 2px solid pink
+      border-radius: 10px;
+    }
+
+    .btn {
+      background: pink
+      color: #fff;
+      font-size: 20px;
+      padding: 15px;
+      border: 2px solid pink
+            border-radius: 50%;
+      box-shadow: inset -2px -2px 5px rgba(255,255,255,0.5),
+                  inset 2px 2px 5px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: transform 0.1s;
+    }
+
+    .btn:active {
+      transform: scale(0.95);
+    }
+
+    .btn.special {
+      background: rgb(245, 171, 183);
+    
+    }
+  .btn.special1{
+      background: #e06e91;
+    
+    }
+
+   
+    .btn1{
+        background-color: skyblue;
+      
+        border: 2px solid rgb(247, 89, 115);
+    }
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <div class="display">205080756</div>
+    <div class="buttons">
+      <button class="btn1">AC</button>
+      <button class="btn">CLR</button>
+      <button class="btn">%</button>
+      <button class="btn special">÷</button>
+      
+      <button class="btn">7</button>
+      <button class="btn">8</button>
+      <button class="btn">9</button>
+      <button class="btn special">×</button>
+
+     
+      <button class="btn">4</button>
+      <button class="btn">5</button>
+      <button class="btn">6</button>
+      <button class="btn special">-</button>
+
+     
+      <button class="btn">1</button>
+      <button class="btn">2</button>
+      <button class="btn">3</button>
+      <button class="btn special">+</button>
+      
+      <button class="btn">←</button>
+      <button class="btn">0</button>
+     
+      <button class="btn">.</button>
+      <button class="btn special1">=</button>
+
+
+      
+
+     
+    </div>
+  </div>
+</body>
+</html>
